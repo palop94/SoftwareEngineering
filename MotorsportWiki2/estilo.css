@@ -1,0 +1,201 @@
+
+
+
+
+	body { font-family: Century Gothic ; color: black; font-size:1.5em }
+	h1 { font-family: cursive; color:#800000 ; align: centre; font-size:2.5em }
+	p { font-family: cursive ;  }
+	
+	
+	.paginacion {
+	  border: 1px solid #CCC;
+	  background-color: #E0E0E0;
+	  
+	  padding: 0em;
+	  overflow: hidden;
+	  position:absolute;
+		bottom:0px;
+		right:0px;
+		left:0px;
+		
+	  }
+	  .paginacion a{
+	  font-family: Century Gothic;
+	  font-color: #000000;
+	  font-weigt: bold;
+	  }
+	 
+	.derecha   { float: right; }
+	.izquierda { float: left;  }
+	
+	
+	.Archivo {font-weight: bold; 
+	font-size: 1.5em;}
+	
+	.Info  {font-style: italic; 
+	font-size: 0.8em;}
+	
+			.btn {
+	background: #031624;
+	background-image: -webkit-linear-gradient(top, #031624, #b82b2b);
+	background-image: -moz-linear-gradient(top, #031624, #b82b2b);
+	background-image: -ms-linear-gradient(top, #031624, #b82b2b);
+	background-image: -o-linear-gradient(top, #031624, #b82b2b);
+	background-image: linear-gradient(to bottom, #031624, #b82b2b);
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Courier New;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+							}
+
+	.btn:hover {
+	background: #3cb0fd;
+	background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+	text-decoration: none;
+							}
+							
+	a.btn {
+	background: #031624;
+	background-image: -webkit-linear-gradient(top, #031624, #b82b2b);
+	background-image: -moz-linear-gradient(top, #031624, #b82b2b);
+	background-image: -ms-linear-gradient(top, #031624, #b82b2b);
+	background-image: -o-linear-gradient(top, #031624, #b82b2b);
+	background-image: linear-gradient(to bottom, #031624, #b82b2b);
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Courier New;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+							}
+
+	a.btn:hover {
+	background: #3cb0fd;
+	background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+	text-decoration: none;
+							}
+							
+	
+	ul.topnav {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+	}
+
+
+	ul.topnav span {
+	float: left;
+	display: inline-block;
+	color: #800000;
+	text-align: left;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 25px;
+	}
+	
+	ul.topnav li {
+	float: right;
+	display: inline-block;
+	color: #f2f2f2;
+	text-align: right;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 17px;
+	}
+
+
+	ul.topnav li a {
+		display: inline-block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		transition: 0.3s;
+		font-size: 17px;
+	}
+
+
+	ul.topnav li a:hover {background-color: #111;}
+
+	
+	ul.topnav li.icon {display: none;}
+	Add media queries:
+
+
+	@media screen and (max-width:680px) {
+	  ul.topnav li:not(:first-child) {display: none;}
+	  ul.topnav li.icon {
+		float: right;
+		display: inline-block;
+	  }
+	}
+
+
+	@media screen and (max-width:680px) {
+	  ul.topnav.responsive {position: relative;}
+	  ul.topnav.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	  }
+	  ul.topnav.responsive li {
+		float: none;
+		display: inline;
+	  }
+	  ul.topnav.responsive li a {
+		display: block;
+		text-align: left;
+	  }
+	}
+	
+	ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+	}
+
+
+	ul.tab li {float: left;
+	display: inline-block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		transition: 0.3s;
+		font-size: 17px;
+	
+	}
+
+
+	ul.tab li :hover {background-color: #ddd;}
+
+
+	ul.tab li :focus, .active {background-color: #ccc;}
+
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+							

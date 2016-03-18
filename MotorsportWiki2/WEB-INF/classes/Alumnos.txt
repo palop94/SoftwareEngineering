@@ -1,0 +1,6 @@
+Mikel	3	Organization
+Luken	3	Organization
+Naroa	4	Mecanic
+Jokin	3	Mecanic
+Jorge	1	Biomedic
+

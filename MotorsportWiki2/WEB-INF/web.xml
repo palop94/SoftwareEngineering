@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app>
+
+
+ <servlet>
+  <servlet-name>ActualizarCarpeta</servlet-name>
+  <servlet-class>ActualizarCarpeta</servlet-class>
+</servlet>
+
+
+ <servlet>
+  <servlet-name>InicioBusqueda</servlet-name>
+  <servlet-class>InicioBusqueda</servlet-class>
+</servlet>
+
+<servlet>
+  <servlet-name>BuscarPersonas</servlet-name>
+  <servlet-class>BuscarPersonas</servlet-class>
+</servlet>
+
+
+
+<servlet>
+  <servlet-name>Busquedas3</servlet-name>
+  <servlet-class>Busquedas3</servlet-class>
+</servlet>
+
+<servlet>
+  <servlet-name>Coche</servlet-name>
+  <servlet-class>Coche</servlet-class>
+</servlet>
+
+<servlet>
+  <servlet-name>Comentarios</servlet-name>
+  <servlet-class>Comentarios</servlet-class>
+</servlet>
+
+<servlet>
+  <servlet-name>CrearCarpeta1</servlet-name>
+  <servlet-class>CrearCarpeta1</servlet-class>
+</servlet>
+
+<servlet>
+  <servlet-name>Equipo</servlet-name>
+  <servlet-class>Equipo</servlet-class>
+</servlet>
+
+<servlet>
+  <servlet-name>Login</servlet-name>
+  <servlet-class>LoginServlet</servlet-class>
+</servlet>
+
+<servlet>
+  <servlet-name>MostrarBusquedas</servlet-name>
+  <servlet-class>MostrarBusquedas</servlet-class>
+</servlet>
+
+<servlet>
+  <servlet-name>MostrarCarpetas</servlet-name>
+  <servlet-class>MostrarCarpetas</servlet-class>
+</servlet>
+
+<servlet>
+  <servlet-name>MostrarComent</servlet-name>
+  <servlet-class>MostrarComent</servlet-class>
+</servlet>
+
+<servlet>
+  <servlet-name>RegistroComentario</servlet-name>
+  <servlet-class>RegistroComentario</servlet-class>
+</servlet>
+
+<servlet>
+  <servlet-name>RegistroComentDocumento</servlet-name>
+  <servlet-class>RegistroComentDocumento</servlet-class>
+</servlet>
+
+<servlet>
+  <servlet-name>saveDocument</servlet-name>
+  <servlet-class>saveDocument</servlet-class>
+</servlet>
+
+<servlet>
+  <servlet-name>UserImgServlet</servlet-name>
+  <servlet-class>UserImgServlet</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>UsuariosEquipo</servlet-name>
+  <servlet-class>UsuariosEquipo</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>Sorted</servlet-name>
+  <servlet-class>Sorted</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>cambioPass</servlet-name>
+  <servlet-class>cambioPass</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>viejonuevo</servlet-name>
+  <servlet-class>viejonuevo</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>eliminarUsuario</servlet-name>
+  <servlet-class>eliminarUsuario</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>cambioTipo</servlet-name>
+  <servlet-class>cambioTipo</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>Vigentes</servlet-name>
+  <servlet-class>Vigentes</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+  <servlet-name>Vigentes</servlet-name>
+  <url-pattern>/Vigentes</url-pattern>
+</servlet-mapping>
+
+
+<servlet-mapping>
+  <servlet-name>cambioTipo</servlet-name>
+  <url-pattern>/cambioTipo</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>eliminarUsuario</servlet-name>
+  <url-pattern>/eliminarUsuario</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>viejonuevo</servlet-name>
+  <url-pattern>/viejonuevo</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>cambioPass</servlet-name>
+  <url-pattern>/cambioPass</url-pattern>
+</servlet-mapping>
+
+
+<servlet-mapping>
+  <servlet-name>Sorted</servlet-name>
+  <url-pattern>/Sorted</url-pattern>
+</servlet-mapping>
+
+
+<servlet-mapping>
+  <servlet-name>UsuariosEquipo</servlet-name>
+  <url-pattern>/UsuariosEquipo</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>ActualizarCarpeta</servlet-name>
+  <url-pattern>/ActualizarCarpeta</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>BuscarPersonas</servlet-name>
+  <url-pattern>/BuscarPersonas</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>Busquedas3</servlet-name>
+  <url-pattern>/Busquedas3</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>Coche</servlet-name>
+  <url-pattern>/Coche</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>Comentarios</servlet-name>
+  <url-pattern>/Comentarios</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>CrearCarpeta1</servlet-name>
+  <url-pattern>/CrearCarpeta1</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>Equipo</servlet-name>
+  <url-pattern>/Equipo</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>Login</servlet-name>
+  <url-pattern>/Login</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>MostrarBusquedas</servlet-name>
+  <url-pattern>/MostrarBusquedas</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>MostrarCarpetas</servlet-name>
+  <url-pattern>/MostrarCarpetas</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>MostrarComent</servlet-name>
+  <url-pattern>/MostrarComent</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>RegistroComentario</servlet-name>
+  <url-pattern>/RegistroComentario</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>RegistroComentDocumento</servlet-name>
+  <url-pattern>/RegistroComentDocumento</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>InicioBusqueda</servlet-name>
+  <url-pattern>/InicioBusqueda</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>saveDocument</servlet-name>
+  <url-pattern>/saveDocument</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>UserImgServlet</servlet-name>
+  <url-pattern>/uimg</url-pattern>
+</servlet-mapping>
+
+</web-app>

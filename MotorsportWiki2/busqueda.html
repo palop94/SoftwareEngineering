@@ -1,0 +1,193 @@
+<HTML>
+
+
+<HEAD>
+<TITLE>TECNUN MOTORSPORT</TITLE>
+<script type="text/javascript" src="funciones.js"> </script>
+
+<style type="text/css">
+	
+	body { font-family: Century Gothic ; color: black; font-size:1.5em }
+	h1 { font-family: cursive; color:#800000 ; align: centre; font-size:2.5em }
+	p { font-family: cursive ;  }
+	
+	
+	.paginacion {
+	  border: 1px solid #CCC;
+	  background-color: #E0E0E0;
+	  
+	  padding: 0em;
+	  overflow: hidden;
+	  position:absolute;
+		bottom:0px;
+		right:0px;
+		left:0px;
+		
+	  }
+	  .paginacion span{
+	  font-family: Century Gothic;
+	  font-color: #000000;
+	  font-weigt: bold;
+	  }
+	 
+	.derecha   { float: right; }
+	.izquierda { float: left;  }
+	
+	
+	
+	
+			a.btn {
+	background: #031624;
+	background-image: -webkit-linear-gradient(top, #031624, #b82b2b);
+	background-image: -moz-linear-gradient(top, #031624, #b82b2b);
+	background-image: -ms-linear-gradient(top, #031624, #b82b2b);
+	background-image: -o-linear-gradient(top, #031624, #b82b2b);
+	background-image: linear-gradient(to bottom, #031624, #b82b2b);
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Courier New;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+							}
+
+	a.btn:hover {
+	background: #3cb0fd;
+	background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+	text-decoration: none;
+							}
+							
+	
+	ul.topnav {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+	}
+
+
+	ul.topnav li {float: left;}
+
+
+	ul.topnav li a {
+		display: inline-block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		transition: 0.3s;
+		font-size: 17px;
+	}
+
+
+	ul.topnav li a:hover {background-color: #111;}
+
+	
+	ul.topnav li.icon {display: none;}
+	Add media queries:
+
+
+	@media screen and (max-width:680px) {
+	  ul.topnav li:not(:first-child) {display: none;}
+	  ul.topnav li.icon {
+		float: right;
+		display: inline-block;
+	  }
+	}
+
+
+	@media screen and (max-width:680px) {
+	  ul.topnav.responsive {position: relative;}
+	  ul.topnav.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	  }
+	  ul.topnav.responsive li {
+		float: none;
+		display: inline;
+	  }
+	  ul.topnav.responsive li a {
+		display: block;
+		text-align: left;
+	  }
+	}
+							
+	</style>
+</HEAD>
+
+<BODY onload="Ocultar('formulario');Ocultar('boton'); Ocultar('textarea')"); ">
+
+
+	<ul class="topnav">
+	<li><a href="#home">TECNUN MOTORSPORT</a></li>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">Busquedas</a></li>
+  <li><a href="#contact">Alumnos</a></li>
+  <li><a href="#about">Coches</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+</ul>
+	<BR>
+	
+	<H1>REALICE SU BUSQUEDA</H1>
+	
+	  
+	
+	
+	
+	<p>Seleccione tipo de busqueda    </p>
+	
+	<input type="button" value="BUSCAR POR:" onclick="Mostrar('formulario')"   > 
+	
+
+	
+	
+	
+	
+	 
+	 
+
+	 
+	 
+	
+	
+	<div id='formulario'> <FORM action="Busquedas2" method="GET"   >
+	
+		<P>
+			 Seleccione tipo de busqueda
+			<BR> 
+				<INPUT type="radio" name="area" value="PorParte" id="PorParte" onclick="Mostrar('textarea')">POR AREA
+			<BR> 
+				
+				<INPUT type="radio" name="nombre" value="PorFecha" onclick="Mostrar('textarea')">POR NOMBRE 
+		
+		</div >
+	
+			 <BR>
+		<div id='textarea'>	<TEXTAREA name="DatosBuscar" rows="1" cols="50" onclick="hide(DatosBuscar);Mostrar('boton')" >Introduzca su busqueda </TEXTAREA> </div>
+		</P>
+		<P>
+		<div id='boton'>	<INPUT type="submit" name="botonBuscar" value="BUSCAR"  ></div>
+		</P>
+		
+		
+		<div id="paginacion" class="paginacion">
+	  <span class="izquierda">&laquo; Inicio</span>
+	  <span class="derecha">Busqueda &raquo;</span>
+		</div>
+
+	</font  >
+	</FORM>
+	
+		
+</BODY>
+</HTML>

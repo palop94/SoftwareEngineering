@@ -1,0 +1,92 @@
+<HTML>
+<HEAD>
+  <TITLE>MotorSport Wiki</TITLE>
+</HEAD>
+
+<BODY>
+  <div align="center">
+  <TR><TD colspan=4><image src='logoHD.png' width='100%'/></TD></TR>
+  <H3>Form to upload a new document</H3>
+  </div>
+  
+ <FORM action="/MotorsportWiki2/saveDocument" method="GET">
+    <TABLE align="center"><TR><TD>
+        <TABLE>
+			<TR> 
+            <TD><P> Document title: </P></TD>
+            <TD><input TYPE="TEXT" name="title"></TD>
+            </TR>
+			<TR> 
+            <TD><P> Season: </P></TD>
+            <TD><input TYPE="TEXT" name="season"></TD>
+            </TR>
+			<TR> 
+            <TD><P> Auxiliar: </P></TD>
+            <TD><input TYPE="TEXT" name="auxiliar"></TD>  
+            </TR>
+			<TR> 
+            <TD><P> Folder: </P></TD>
+            <TD><input TYPE="TEXT" name="folder"></TD>  
+            </TR>
+			<TR> 
+            <TD><P> Precedent: </P></TD>
+            <TD><input TYPE="TEXT" name="precedent"></TD>  
+            </TR>
+			<TR> 
+            <TD><P> Author: </P></TD>
+				<datalist id="members_list">
+					<option value="Alicia Martínez">
+					<option value="Daniel Ramos">
+					<option value="Ignacio Aperribay">
+					<option value="Mikel Mindeguia">
+					<option value="Paula López">
+					<option value="Samuel Lapp">
+				</datalist>
+				
+            <TD><input TYPE="TEXT" name="author" list="members_list"></TD>
+            </TR>
+        </TABLE>
+        </TD>
+        </TR>
+        <TR></TR>
+		<TD>
+		<button type="submit" align="center" onclick="validate()">Upload the document</button>
+		</TD>
+		
+		<!-- JavaScript -->
+
+		<p id="validate"></p> 
+		
+	</TABLE>
+		
+	<SCRIPT>
+	function noEntry(field) {
+		t1=field.value;
+		if (t1.length<1) {
+			alert("The field should not be empty");
+			field.focus();
+			return false;
+		}else { return true; }
+	}
+	//function sizeIs(field, n, field1) {
+	//	mt=field.value;
+	//		if (mt.length!=n) {
+	//			alert("The "+field1+" must have "+n+" digits");
+	//			field.focus();
+	//		return false;
+	//	}else { return true; }
+	//}
+	function validate() {	
+		if(noEntry(document.forms[0].elements[0]) == false) return;
+		if(noEntry(document.forms[0].elements[1]) == false) return;
+		if(noEntry(document.forms[0].elements[2]) == false) return;
+		if(noEntry(document.forms[0].elements[3]) == false) return;
+		if(noEntry(document.forms[0].elements[4]) == false) return;
+		if(noEntry(document.forms[0].elements[5]) == false) return;
+		document.forms[0].submit();
+	}
+	</SCRIPT>
+ </FORM>
+  
+</BODY>
+</HTML>

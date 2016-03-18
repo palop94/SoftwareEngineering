@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<TITLE>TECNUN MOTORSPORT</TITLE>
+	
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<style>
+	body{
+	font-size:1.0em;
+	}
+	
+	.floatdiv {
+		float:left;
+		height: 250px;
+		width: 49%;
+		top: 0px;
+		
+	}
+	</style>
+    
+</head>
+    
+<body>
+
+<div class="floatdiv">
+<h2>Hello, please log in: <br>(try user id: 111111 pass: 123)</h2>
+<p id="Text"><br></p>
+<p id="alert" style="color:red"><br></p>
+<p id="alert2" style="color:red"><br></p>    
+</div>   
+
+<div class="floatdiv" > 
+        <p id="imgText"> </p>
+        <br>
+        <img src="" id="img" height="80">
+    </div>
+    
+	<br>
+<div class="floatdiv">
+<form action="Login" method=POST>
+    <p><strong>Enter Your 6-digit ID: </strong>
+    <input type="text" name="username" id="username" size="25" onblur="checkUser()" onkeyup="getUserImg()">
+        
+    <p><strong>Enter Your Password: </strong>
+    <input type="password" size="15" name="password" id="password" onblur="checkPass()" onkeyup= "checkPass()">
+    <p>
+    
+    <input class="btn" type="button" value="Submit" onclick="sendForm()">
+    <!--<input type="submit" value="Submit">-->
+    <input class="btn" type="reset" value="Reset" onclick=¨"update()">
+</form>
+</div>
+    
+    
+ <div  class="floatdiv">   
+    <p>What does this webapp+servlet page do? 
+    <br>
+    1. If you do not complete a field, it alerts you
+        <br>
+    2. When you hit submit it sends your credentials to the server and reads the response
+        <br>
+    3. If you have incorrect credentials (a blank field), it does not send you to the home page. It also counts the number of incorrect attempts
+        <br>
+    4. If you enter a valid username and password, you are redirected to the home page
+        <br>
+    5. After 3 incorrect attempts, you get an alert
+        <br>
+    6. Displays an image of the user. Try "111111"
+        <br>
+    </p>
+</div>
+    
+<script>
+        var numberOfFails=0;
+        function update(){
+		checkUser();
+		checkPass();
+		getUserImg();
+		}
+		
+        function sendForm(){
+
+            var xmlhttp = new XMLHttpRequest();
+            var url = "Login";
+
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var results = xmlhttp.responseText;//JSON.parse(xmlhttp.responseText);
+                    analyze(results);
+                }
+            };
+            xmlhttp.open("POST", url, true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+            var name = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+
+            xmlhttp.send("username="+name+"&password="+pass);
+        }
+    
+        function getUserImg(){
+        
+            var xmlhttp = new XMLHttpRequest();
+            var url = "uimg";
+
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var imageReturned = xmlhttp.response;
+                    postImage(imageReturned);
+                }
+            };
+            xmlhttp.open("POST", url, true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+            var name = document.getElementById("username").value;
+            xmlhttp.send("username="+name);
+            
+        }
+        
+        function analyze(results) {
+            if (results == "succeeded"){
+                //log user into the system
+                window.location="./startPage.html";
+            } else if(results == "failed"){
+                numberOfFails +=1; 
+                document.getElementById("Text").innerHTML="Error: Incorrect Username or Password ("
+                    + numberOfFails + " incorrect attempts)";
+                if(numberOfFails>=3){
+                    alert("Three wrong attempts! Contact the administrator if you need help");
+                }
+            }
+        }
+        
+    
+    function postImage(imgURL){
+        image = document.getElementById("img");
+
+        if(imgURL=="no image" || imgURL.length<1){
+            document.getElementById("imgText").innerHTML="no image available";
+            image.src="";
+        }else{
+            document.getElementById("imgText").innerHTML="Image of user:";
+            image.src=imgURL;//data:image/png;base64,"+imgURL;//imgURL;
+        }
+
+    }
+    
+        function checkUser(){
+
+            var u=document.getElementById("username").value;
+            if(u.length<1){
+            document.getElementById("alert").innerHTML="Please enter a username";
+            }else if(u.length!=6){
+            document.getElementById("alert").innerHTML="Your ID should be 6 digits";
+            }else{
+                document.getElementById("alert").innerHTML="<br>";
+            }
+        }
+        
+        function checkPass(){
+            var p=document.getElementById("password").value;
+            if(p.length<1){
+                document.getElementById("alert2").innerHTML="Please enter a password";
+            }
+            else{
+                document.getElementById("alert2").innerHTML="<br>";
+            }
+        }
+    </script>
+
+    </body>
+</html>

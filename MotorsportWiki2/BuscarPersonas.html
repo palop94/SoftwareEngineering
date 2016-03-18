@@ -1,0 +1,38 @@
+<HTML>
+    <HEAD>
+		<meta charset="utf-8">
+        <TITLE>Buscar </TITLE>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<link rel="stylesheet" href="/resources/demos/style.css">
+		<script>
+			$(function() {
+				$( document ).tooltip();
+			});
+		</script>
+    </HEAD>
+
+    <BODY TEXT="Black" BACKGROUND="Fondo2.jpg" BGPROPERTIES="fixed" style="background-repeat: no-repeat; background-size:cover" leftMargin  topMargin  marginheight  marginwidth >
+        <H2 ALIGN="center"><FONT COLOR="Black">Buscar Participantes</FONT></H2><BR>
+        <P><B> Introduzca UN patron de busqueda:</B><BR>
+        <FORM ACTION="BuscarPersonas" METHOD="get">
+		
+			<TABLE>
+				<TR>
+                <TD VALIGN="up"><B> Grado de Ingenieria </B></TD>
+                <TD><INPUT NAME="Grado" ROWS="1" COLS="20"title="If you want to know the students that participate in Motorsport depending of their grade, input it here: Management, Electric, Mecanic,Telecomunication,..." > </INPUT></TD>
+                </TR>
+				
+                <TR>
+                <TD VALIGN="up"><B> Curso del alumno </B></TD>
+                <TD><INPUT NAME="Curso" ROWS="1" COLS="20" title="If you want to know the students that participate in Motorsport depending of their curse, input it here."> </INPUT></TD>
+                </TR>				
+			</TABLE>
+			
+            <P ALIGN="center"><INPUT TYPE="submit" VALUE="Continuar"  > 
+			
+			<P ALIGN="center" href="Inicio"><INPUT TYPE="reset" VALUE="Cancelar">
+        </FORM>        
+    </BODY>
+</HTML>

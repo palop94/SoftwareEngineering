@@ -1,0 +1,49 @@
+<HTML>
+    <HEAD>
+        <TITLE>Actualizar </TITLE>
+		<SCRIPT type="text/javascript" src="Validar.js"></SCRIPT>		
+    </HEAD>
+
+    <BODY TEXT="Black"  BGPROPERTIES="fixed" style="background-repeat: no-repeat; background-size:cover" leftMargin  topMargin  marginheight  marginwidth >
+        <H2 ALIGN="center"><FONT COLOR="Black">Actualizar Carpeta</FONT></H2><BR>
+        <P><B> Introduzca los datos de la carpeta que quiere actualizar:</B><BR>
+        <FORM ACTION="ActualizarCarpeta" METHOD="get">
+		
+			<TABLE>
+				<TR>
+                <TD VALIGN="up"><B> Nombre de Carpeta que se desea modificar </B></TD>
+                <TD><INPUT NAME="Nombre" ROWS="1" COLS="20"> </INPUT></TD>
+                </TR>
+				
+                <TR>
+                <TD VALIGN="up"><B> Nombre actualizado de Carpeta </B></TD>
+                <TD><INPUT NAME="Nombrea" ROWS="1" COLS="20"> </INPUT></TD>
+                </TR>
+		
+                <TR>
+                <TD VALIGN="up"><B> Fecha de Actualizacion </B></TD>
+                <TD><INPUT NAME="fecha" ROWS="1" COLS="12"> </INPUT></TD>
+                </TR>
+			
+                <TR>
+                <TD VALIGN="up"><B>Etiqueta 1 </B></TD>
+                <TD><INPUT NAME="etiqueta1" ROWS="1" COLS="15"> </INPUT></TD>
+                </TR>
+			
+                <TR>
+                <TD VALIGN="up"><B>Etiqueta 2</B></TD>
+                <TD><INPUT NAME="etiqueta2" ROWS="1" COLS="15"> </INPUT></TD>
+                </TR>
+			
+                <TR>
+                <TD VALIGN="up"><B>Etiqueta 3</B></TD>
+                <TD><INPUT NAME="etiqueta3" ROWS="1" COLS="15"> </INPUT></TD>
+                </TR>
+			</TABLE>
+			
+            <P ALIGN="center"><INPUT TYPE="submit" VALUE="Continuar" onClick="validated()" > 
+			
+			<P ALIGN="center" href="Inicio"><INPUT TYPE="reset" VALUE="Cancelar">
+        </FORM>        
+    </BODY>
+</HTML>

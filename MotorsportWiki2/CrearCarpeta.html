@@ -1,0 +1,70 @@
+<HTML>
+<link href=\"Micon.png\" rel=\"shortcut icon\">
+    <HEAD>
+        <TITLE>Crear </TITLE>
+		<SCRIPT type="text/javascript" src="Validacion.js"></SCRIPT>
+		<link rel="stylesheet" href="estilo.css">
+    </HEAD>
+
+    <BODY TEXT="Black" BGPROPERTIES="fixed" style="background-repeat: no-repeat; background-size:cover" leftMargin  topMargin  marginheight  marginwidth >
+        <ul class="topnav">
+			<li><a href="index.html">TECNUN MOTORSPORT</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="busqueda.html">Busquedas</a></li>
+			<li><a href="#contact">Alumnos</a></li>
+			<li><a href="#about">Coches</a></li>
+			<li><a href="MostrarCarpetas">Carpetas</a></li>
+		</ul>
+		
+		<H2 ALIGN="center"><FONT COLOR="Black">Crear Carpeta</FONT></H2><BR>
+        <P ALIGN="center"><B> Introduzca los datos de la carpeta:</B><BR>
+        <FORM ACTION="CrearCarpeta1" METHOD="get">
+			
+			<TABLE style="margin-left: 725px;">
+                <TR>
+                <TD ALIGN="center" VALIGN="up"><B> Nombre de Carpeta </B></TD>
+				</TR>
+				<TR>
+                <TD><P ALIGN="center"><INPUT  NAME="Nombre" ROWS="1" COLS="20"> </INPUT></TD>
+                </TR>
+				
+				<TR>
+                <TD ALIGN="center" VALIGN="up"><B> Carpeta de la que procede </B></TD>
+				</TR>
+				<TR>
+                <TD><P ALIGN="center"><INPUT  NAME="procedente" ROWS="1" COLS="20"> </INPUT></TD>
+                </TR>
+					
+                <TR>
+                <TD ALIGN="center" VALIGN="up"><B>Etiqueta 1 </B></TD>
+				</TR>
+				<TR>
+                <TD><P ALIGN="center"><INPUT  NAME="etiqueta1" ROWS="1" COLS="15"> </INPUT></TD>
+                </TR>
+			
+                <TR>
+                <TD ALIGN="center" VALIGN="up"><B>Etiqueta 2</B></TD>
+				</TR>
+				<TR>
+                <TD><P ALIGN="center"><INPUT NAME="etiqueta2" ROWS="1" COLS="15"> </INPUT></TD>
+                </TR>
+			
+                <TR>
+                <TD ALIGN="center" VALIGN="up"><B>Etiqueta 3</B></TD>
+				</TR>
+				<TR>
+                <TD><P ALIGN="center"><INPUT  NAME="etiqueta3" ROWS="1" COLS="15"> </INPUT></TD>
+                </TR>
+			</TABLE>
+			
+            <P ALIGN="center"><INPUT class="btn" TYPE="submit" VALUE="Continuar" onClick="validate()">
+			
+			<P ALIGN="center" href="Inicio"><INPUT class="btn" TYPE="reset" VALUE="Cancelar">
+        
+			<div id="paginacion" class="paginacion">
+			<span class="izquierda" href="index.html">&laquo; Inicio</span>
+			<span class="derecha" href="MostrarCarpetas">MostrarCarpetas &raquo;</span>
+		</div>
+		</FORM>        
+    </BODY>
+</HTML>

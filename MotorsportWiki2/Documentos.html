@@ -1,0 +1,65 @@
+<html>
+
+<br>
+<head><link rel="stylesheet" href="estilo.css"><script type="text/javascript" src="funciones.js"> </script><title>Documentos</title></head>
+<body>
+<ul class="topnav">
+			<li><a href="index.html">TECNUN MOTORSPORT</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="busqueda.html">Busquedas</a></li>
+			<li><a href="#contact">Alumnos</a></li>
+			<li><a href="#about">Coches</a></li>
+			<li><a href="MostrarCarpetas">Carpetas</a></li>
+			<li class="icon">
+		<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+		</li>
+</ul>
+
+
+<body bgcolor="#FFFFFF" text="#631818">
+
+<h3>
+Listado de Documentos:</h3>
+
+
+  <p align="left">
+
+  <TABLE BORDER="0">
+  
+   <TR><TD><strong><INPUT TYPE="hidden" NAME="AjusteDireccion" VALUE="AjusteDireccion" COLOR="Black" SIZE="17">Ajuste de direccion</strong></TD>
+   </TR>
+   <TR>
+   </TR>
+   <TR><TD><strong><INPUT TYPE="hidden" NAME="AjusteDireccion" VALUE="Analisis" COLOR="Black" SIZE="17">Analisis de la resistencia del chasis</strong></TD>
+   </TR>
+   <TR>
+   </TR>
+   <TR>
+   </TR>
+   <TR>
+   </TR>
+   <TR>
+    <TD align="left"><a href="IntroComentDocumento.html"><INPUT class="btn" TYPE="submit" VALUE="Escribir Comentario"></a></TD><TD></TD><TD></TD><TD></TD><TD align="left"> <a class="btn" type="button" value="Mostrar Comentarios" onclick= "Mostrar('textarea')" "bloquear('botonBuscar') >Mostrar Comentarios</li></TD>
+    </TR>
+	
+</TABLE>
+
+<form  action="MostrarComent" method="get" >
+	<BR>
+	<div id='DatosBuscar'><TEXTAREA placeholder="Introduzca el nombre del documento..." class= "tabcontent" id='textarea' name="DatosBuscar" rows="1" cols="50" onClick="Mostrar('botonBuscar');Limpiar('DatosBuscar')"></TEXTAREA></div>
+	<BR>
+	<div id="botonBuscar"><INPUT type="submit" class="btn" id='botonBuscar' name="botonBuscar" value="BUSCAR"></a></div>
+	
+ </form> 
+  
+  <p align="left">
+    
+  </p>
+<BR>
+<BR>
+<div id="paginacion" class="paginacion">
+<span class="izquierda">&laquo; Inicio</span>
+<span href="Modificacion.html" class="derecha">Modificacion &raquo;</span>
+</body>
+
+</html>

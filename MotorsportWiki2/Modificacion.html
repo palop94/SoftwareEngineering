@@ -1,0 +1,104 @@
+<HTML>
+
+<br>
+<head><link rel="stylesheet" href="estilo.css"><script type="text/javascript" src="funciones.js"> </script><title>Busquedas realizadas</title></head>
+<body>
+<ul class="topnav">
+<li><a href="#home">TECNUN MOTORSPORT</a></li>
+ <li><a href="#home">Home</a></li>
+<li><a href="InicioBusqueda">Busquedas</a></li>
+<li><a href="#contact">Alumnos</a></li>
+<li><a href="#about">Coches</a></li>
+<li class="icon">
+ <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+</li>
+</ul>
+<h3>
+Modificacion de usuarios
+</h3>
+<center>
+	Este HTML (que en el siguiente entregable sera servlet) te lleva a las siguientes funciones que hay abajo
+	<br>
+	Las siguientes funciones realizan modificaciones en la base de datos y solo tienes que introducir los distintos datos
+	<br>
+	que te piden en cada casilla de la tabla
+		<table border="1" style="width:100%">
+			<tr>
+				<td>Modificar contrasena de un usuario</td>
+				<td>Modificar Vigencia</td> 
+				<td>Anadir Miembro Viejo del Equipo</td>
+				<td>Cambiar tipo de usuario</td>
+				<td>Eliminar Usuario</td>
+		</tr>
+		<tr>
+				<td><form action="cambioPass">
+						ID:<br>
+						<input type="text" name="ID" value=""><br>
+						Password actual:<br>
+						<input type="text" name="passviejo" value=""><br>
+						Password nuevo:<br>
+						<input type="text" name="nuevo" value=""><br>
+						<input type="submit" value="Modificar">
+				</form></td>
+				<td><form action="Vigentes">
+						ID:<br>
+						<input type="text" name="ID" value=""><br>
+							Vigente:<br>
+						<select name="passviejo">
+						<option value="Si">Si</option>
+						<option value="No">No</option>
+						<br>
+						<br>
+						<input type="submit" value="Modificar">
+				</form></td> 
+				<td><form action="viejonuevo">
+						Nombre<br>
+						<input type="text" name="Nombre" value=""><br>
+						Apellidos:<br>
+						<input type="text" name="passviejo" value=""><br>
+						Grado<br>
+						<select name="nuevo">
+						<option value="Organizacion">Organizacion</option>
+						<option value="Tecnologias Industriales">Tecnologias Industriales</option>
+						<option value="Mecanica">Mecanica</option>
+						<option value="Diseno">Diseno</option>
+						<option value="Biomedica">Biomedica</option>
+						<option value="Telecomunicaciones">Telecomunicaciones</option>
+						<option value="Electronico">Electronico</option>
+						</select><br>
+						<input type="submit" value="Anadir">
+				</form></td>
+				<td><form action="cambioTipo">
+						ID:<br>
+						<input type="text" name="ID" value=""><br>
+						Tipo de usuario:<br>
+						<select name="passviejo">
+						<option value="G">General</option>
+						<option value="H">Head of Area</option>
+						<option value="R">Retirado</option>
+						<option value="A">Administrador</option>
+						<option value="C">Colaborador</option>
+						<option value="P">Profesor adjunto</option>
+						<br>
+						<br>
+						<input type="submit" value="Modificar">
+				</form></td>
+				<td><form action="eliminarUsuario">
+						ID:<br>
+						<input type="text" name="ID" value=""><br>
+						Password actual:<br>
+						<input type="text" name="passviejo" value=""><br>
+						<input type="submit" value="Eliminar">
+				</form></td>
+		</tr>
+	</table><br><br><br>
+	<a href="Inicio.html" class="btn">Inicio/HomePage</a><br><br><br>
+</center>
+<BR>
+<BR>
+<div id="paginacion" class="paginacion">
+<span class="izquierda">&laquo; Inicio</span>
+<span href="Modificacion.html" class="derecha">Modificacion &raquo;</span>
+
+</body>
+</html>
